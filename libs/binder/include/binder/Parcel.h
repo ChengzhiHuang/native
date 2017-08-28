@@ -19,6 +19,9 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
+#include <memory>
+#include <limits>
 
 #include <android-base/unique_fd.h>
 #include <cutils/native_handle.h>

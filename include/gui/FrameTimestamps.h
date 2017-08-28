@@ -26,6 +26,9 @@
 #include <bitset>
 #include <vector>
 
+#include <iostream>
+#include <memory>
+
 namespace android {
 
 struct FrameEvents;

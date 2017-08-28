@@ -33,7 +33,7 @@
 #include <gui/FrameTimestamps.h>
 
 #include <hidl/HybridInterface.h>
-#include <android/hardware/graphics/bufferqueue/1.0/IGraphicBufferProducer.h>
+#include <gui/IGraphicBufferProducer.h>
 
 namespace android {
 // ----------------------------------------------------------------------------
@@ -41,10 +41,12 @@ namespace android {
 class IProducerListener;
 class NativeHandle;
 class Surface;
-typedef ::android::hardware::graphics::bufferqueue::V1_0::IGraphicBufferProducer
-        HGraphicBufferProducer;
+//typedef ::android::hardware::graphics::bufferqueue::V1_0::IGraphicBufferProducer
+//        HGraphicBufferProducer;
+    class IGraphicBufferProducer;
+    typedef IGraphicBufferProducer HGraphicBufferProducer;
 
-/*
+    /*
  * This class defines the Binder IPC interface for the producer side of
  * a queue of graphics buffers.  It's used to send graphics data from one
  * component to another.  For example, a class that decodes video for

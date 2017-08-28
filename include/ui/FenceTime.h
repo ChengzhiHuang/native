@@ -26,6 +26,9 @@
 #include <queue>
 #include <unordered_map>
 
+#include <iostream>
+#include <memory>
+
 namespace android {
 
 class FenceToFenceTimeMap;
